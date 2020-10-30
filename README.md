@@ -12,6 +12,18 @@
 - The Set object lets you store unique values of any type, whether primitive values or object references.
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
 
+mySet.add(1); // Set { 1 }
+mySet.add(5); // Set { 1, 5 }
+
+mySet.has(1); // true
+mySet.has(3); // false, 3은 set에 추가되지 않았음
+
+mySet.delete(5); // set에서 5를 제거함
+mySet.has(5);    // false, 5가 제거되었음
+
+mySet.size; // 4, 방금 값을 하나 제거했음
+console.log(mySet);// Set {1, "some text", Object {a: 1, b: 2}, Object {a: 1, b: 2}}
+
 ## 인형뽑기
 
 - 나
